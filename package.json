@@ -1,0 +1,20 @@
+{
+  "homepage": "https://<Calzada-ds>.github.io/<Dise-oMultimedia>",
+  "name": "convai-chat-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "convai-chatui-sdk": "^0.0.5",
+    "preact": "^10.26.5"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "vite": "^6.3.5"
+  }
+}
