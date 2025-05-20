@@ -244,11 +244,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: var(--white);
+  background-color: var(transparent);
 }
 
 section:nth-child(even) {
-  background-color: var(--gray-100);
+  background-color: var(black);
 }
 
 .section-title {
