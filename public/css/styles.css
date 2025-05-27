@@ -292,6 +292,49 @@ img {
   }
 }
 
+/* Estilos para la sección del visor 3D */
+#fbx-viewer {
+  margin: 2rem auto; /* margen arriba y abajo, centro horizontal automático */
+  padding: 1rem; /* espacio interno */
+  max-width: 1400px; /* ancho máximo */
+  background-image: url('../img/BannerF.png') !important; /* imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px; /* bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontalmente el contenido */
+}
+
+.section-title-fbx {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;             /* un verde oscuro, profesional y fresco */
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  user-select: none;          /* evita que el texto se seleccione accidentalmente */
+}
+
+
+/* Centrar y dar tamaño al model-viewer */
+#fbx-viewer model-viewer {
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  max-width: 600px; /* ancho máximo */
+  height: 400px;
+
+  /* El fondo del model-viewer transparente para que se vea la imagen del contenedor */
+  background-color: transparent !important;
+
+  /*border: 1px solid rgb(255, 255, 255);*/
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
 /* Section Styles */
 section {
   padding: 0rem 0;
