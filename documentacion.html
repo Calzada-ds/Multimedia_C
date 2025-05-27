@@ -10,28 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header-->
     <header class="header">
-        <div class="container">
-            <div class="header-logo">
-                <img src="img/logo.png" alt="Logo UPIICSA" class="logo">
-                <h1>Portal de Servicios</h1>
-            </div>
+        <!-- Fila de logos -->
+        <div class="container logos-row">
+            <img src="public/img/U_Logo.png" alt="Logo UPIICSA" class="logo logo-side">
+            <img src="public/img/LogoM.png" alt="Mi Logo" class="logo logo-center">
+            <img src="public/img/IPN_Logo.png" alt="Logo IPN" class="logo logo-side">
+        </div>
+
+        <!-- Fila de título -->
+        <div class="container title-row">
+            <h1 class="site-title">Portal Integral de Egreso</h1>
+        </div>
+
+        <!-- Fila de navegación -->
+        <div class="container nav-row">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="titulacion.html">Titulación</a></li>
                     <li><a href="servicio-social.html">Servicio Social</a></li>
                     <li><a href="practicas.html">Prácticas Profesionales</a></li>
                     <li><a href="documentacion.html">Documentación</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </header>
-
 
     <main>
         <div class="container">
@@ -382,35 +388,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Chat Button -->
-    <button class="chat-button">
-        <i class="fas fa-comment-dots"></i>
-    </button>
-
-    <!-- Chat Container -->
-    <div id="chat-container" class="chat-container hidden">
-        <div class="chat-header">
-            <h3>Asistente Virtual UPIICSA</h3>
-            <p>Respuestas inmediatas a tus dudas</p>
-            <button class="close-chat">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div id="chat-messages" class="chat-messages">
-            <div class="message bot">
-                <div class="message-content">
-                    <p>¡Hola! Soy el asistente virtual de UPIICSA. ¿En qué puedo ayudarte con la documentación?</p>
-                </div>
-            </div>
-        </div>
-        <div class="chat-input">
-            <input type="text" id="user-message" placeholder="Escribe tu mensaje...">
-            <button id="send-message">
-                <i class="fas fa-paper-plane"></i>
-            </button>
-        </div>
-    </div>
 
     <script src="js/main.js"></script>
     <script src="js/chat.js"></script>
