@@ -13,9 +13,9 @@
 
 <body>
     <!-- Header-->
-    <header class="header">
+ <header class="header">
         <!-- Fila de logos -->
-        <div class="container logos-row">
+          <div class="container logos-row">
             <img src="public/img/U_Logo.png" alt="Logo UPIICSA" class="logo logo-side">
             <img src="public/img/LogoM.png" alt="Mi Logo" class="logo logo-center">
             <img src="public/img/IPN_Logo.png" alt="Logo IPN" class="logo logo-side">
@@ -28,6 +28,15 @@
 
         <!-- Fila de navegación -->
         <div class="container nav-row">
+            <!-- Checkbox oculto para controlar el menú móvil -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            
+            <!-- Label que funciona como botón hamburguesa -->
+            <label for="menu-toggle" class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Menú principal -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -37,7 +46,6 @@
                     <li><a href="documentacion.html">Documentación</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
@@ -54,7 +62,7 @@
             <!-- Contenido y 3D -->
             <div class="page-content">
                 <div class="page-header">
-                    <model-viewer src="FBX_F/Dragon Scholar Emblem 0521170525 texture.gltf" alt="Dragon" auto-rotate
+                    <model-viewer src="FBX_F/Libreo 3D.glb" alt="Dragon" auto-rotate
                         camera-controls>
                     </model-viewer>
 

@@ -2,16 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set current year in footer
     document.getElementById("current-year").textContent = new Date().getFullYear()
   
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
-    const mainNav = document.querySelector(".main-nav")
-  
-    if (mobileMenuBtn && mainNav) {
-      mobileMenuBtn.addEventListener("click", () => {
-        mainNav.style.display = mainNav.style.display === "flex" ? "none" : "flex"
-      })
-    }
-  
     // Video player functionality
     const playBtn = document.querySelector(".play-btn")
     const videoThumbnail = document.querySelector(".video-thumbnail")
